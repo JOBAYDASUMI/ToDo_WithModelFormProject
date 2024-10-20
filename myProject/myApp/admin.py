@@ -19,7 +19,7 @@ class CustomUser_Display(admin.ModelAdmin):
             "Advance Options",
             {
                 "classes":["collapse"],
-                "fields":["usertype","profile_pic"]
+                "fields":["first_name","last_name","usertype","profile_pic"]
             }
         ),
     ]
@@ -27,4 +27,6 @@ class CustomUser_Display(admin.ModelAdmin):
 admin.site.register(CustomUser,CustomUser_Display)
 
 
-admin.site.register(BasicInfoModel)
+
+admin.site.register(CategoryModel)
+admin.site.register(TaskModel)
